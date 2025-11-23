@@ -1,2 +1,4 @@
-# Basic-implemantacion-of-cibersec
-Na minha empresa atual existe um grande buraco relacionado a ciberceguranca, o qual desejo preencher aos poucos e nesse repositorio vou informar como.
+# Cibersegurança na MITIS — Diretrizes e Implementação
+Este repositório documenta os problemas atuais relacionados à segurança da informação na MITIS, bem como um conjunto de práticas, políticas e soluções completas para tornar o ambiente mais seguro, escalável e confiável.
+
+O objetivo é servir como base técnica, manual de referência e guia de implementação gradual para a equipe de desenvolvimento, suporte, diretoria e TI.
