@@ -1,0 +1,214 @@
+#Cola dos slides para minha apresentacao 
+
+Slide 1 — Sumário
+
+Introdução
+
+Conceitos Fundamentais da Cibersegurança
+
+Situação Atual da MITIS
+
+Política de Senhas
+
+Desenvolvimento Seguro
+
+Política de Acesso a Bancos de Dados
+
+Consequências da Falta de Segurança
+
+Escalabilidade e Cultura de Segurança
+
+Conclusão
+
+Cola:
+Abra cumprimentando o público e explique que esta palestra tem como objetivo conscientizar sobre a importância da cibersegurança na MITIS, contextualizando os riscos atuais e propondo medidas práticas que permitam o crescimento seguro da empresa e a proteção dos dados dos clientes.
+
+Slide 2 — Introdução
+
+Texto no slide:
+
+A cibersegurança é o conjunto de práticas destinadas a proteger sistemas, redes e dados contra acessos indevidos, falhas e ataques.
+
+Em uma empresa de tecnologia, ela é o que sustenta a confiabilidade dos serviços e a continuidade dos negócios.
+
+Cola:
+Explique que segurança da informação não é apenas um complemento técnico, mas um pilar estratégico.
+Na MITIS, que desenvolve e mantém um ERP usado por diversos clientes, a proteção dos dados e da infraestrutura é crucial para manter a confiança e a reputação.
+Reforce que sem segurança, não há continuidade operacional.
+
+Slide 3 — Conceitos Fundamentais da Cibersegurança
+
+Texto no slide:
+Princípios básicos (Tríade CIA):
+
+Confidencialidade: apenas pessoas autorizadas acessam informações sensíveis.
+
+Integridade: os dados não são alterados de forma indevida.
+
+Disponibilidade: os sistemas permanecem acessíveis e funcionais.
+
+Cola:
+Diga que esses três princípios são universais, mas que todos são testados diariamente em uma empresa de software.
+Dê exemplos da MITIS:
+
+A confidencialidade é violada quando um arquivo .mts guarda senhas em texto puro.
+
+A integridade é comprometida quando qualquer colaborador pode acessar e alterar o banco de um cliente.
+
+A disponibilidade é perdida quando um servidor é atacado ou configurado incorretamente, deixando o ERP fora do ar.
+
+Slide 4 — Situação Atual da MITIS
+
+Texto no slide:
+
+Arquivos de conexão .mts armazenam credenciais em texto simples.
+
+Portas padrão dos bancos de dados permanecem abertas para qualquer origem.
+
+Acesso amplo a informações sensíveis sem diferenciação de permissões.
+
+Ausência de controle de versão e rastreabilidade de alterações de código.
+
+Cola:
+Fale com naturalidade e sem acusar setores: o objetivo é diagnóstico, não crítica.
+Explique que essas práticas funcionam a curto prazo, mas tornam a estrutura frágil e difícil de escalar.
+Hoje, uma simples exposição de arquivo ou vazamento interno pode permitir que dados de clientes inteiros sejam copiados, apagados ou manipulados.
+
+Slide 5 — Política de Senhas
+
+Texto no slide:
+
+Senhas fracas são a causa de 80% das violações de dados (Verizon, 2024).
+
+Diretrizes recomendadas:
+
+Mínimo de 12 caracteres.
+
+Mistura de letras, números e símbolos.
+
+Troca periódica com controle de histórico.
+
+Bloqueio automático após tentativas falhas.
+
+Uso de autenticação multifator (MFA).
+
+Cola:
+Explique que, na MITIS, o risco mais crítico está na exposição das credenciais de banco dentro dos arquivos .mts.
+Essas credenciais não devem ser legíveis nem copiáveis.
+Sugira o uso de criptografia local, armazenamento em cofres de segredo e política interna de senhas obrigatória.
+Dê o exemplo da Uber (2022), onde um funcionário reutilizou uma senha exposta em outro serviço e um invasor obteve acesso ao sistema interno.
+
+Slide 6 — Desenvolvimento Seguro
+
+Texto no slide:
+Boas práticas para aplicações MITIS (ERP):
+
+Validação de dados de entrada.
+
+Prevenção contra SQL Injection.
+
+Utilização de HTTPS e certificados válidos.
+
+Proteção contra XSS e manipulação de cookies.
+
+Controle de sessão e expiração de tokens.
+
+Atualização e auditoria de bibliotecas e dependências.
+
+Cola:
+Explique que o ERP é desenvolvido internamente, e isso é uma vantagem competitiva, mas também responsabilidade direta.
+O código precisa ser seguro desde o início:
+
+“Um erro de validação pode permitir que alguém execute comandos diretamente no banco, extraindo dados de vários clientes.”
+Mostre que essas práticas não reduzem desempenho, apenas garantem que o sistema seja robusto e confiável.
+
+Slide 7 — Política de Acesso a Bancos de Dados
+
+Texto no slide:
+
+Recomendações de controle:
+
+Conexões criptografadas (SSL/TLS).
+
+Armazenamento seguro de credenciais.
+
+Nomes de máquinas e IPs autorizados.
+
+Contas de acesso segmentadas por função.
+
+Liberação controlada e documentada de portas.
+
+Registro de logs e tentativas de acesso.
+
+Cola:
+Explique que, atualmente, qualquer máquina configurada com o .mts pode se conectar ao banco, mesmo sem necessidade.
+Isso aumenta o risco de vazamento e sabotagem, mesmo que involuntária.
+Proponha que a MITIS padronize a política de acesso:
+
+Cada máquina ou serviço autenticado deve ter identificação exclusiva;
+
+Cada cliente deve ter credenciais próprias, com acesso mínimo necessário;
+
+O uso de SSL deve ser obrigatório, mesmo em redes internas.
+
+Slide 8 — Consequências da Falta de Segurança
+
+Texto no slide:
+
+Exemplos reais:
+
+Colonial Pipeline (2021): ransomware causou paralisação de serviços.
+
+Renner (2021): criptografia de servidores e prejuízos milionários.
+
+Localiza (2023): exposição de dados internos e de clientes.
+
+Na MITIS, um incidente poderia:
+
+Expor dados fiscais e financeiros de clientes.
+
+Danificar a reputação da marca.
+
+Causar perda de contratos e ações judiciais.
+
+Cola:
+Mostre que segurança não é um luxo, é uma necessidade operacional.
+Diga que se um invasor acessar o banco de um cliente, ele pode vazar CNPJs, senhas, notas fiscais e informações contábeis, o que gera consequências legais sérias.
+Reforce que corrigir após o incidente é sempre mais caro e demorado do que prevenir.
+
+Slide 9 — Escalabilidade e Cultura de Segurança
+
+Texto no slide:
+
+A segurança deve crescer junto com o negócio.
+
+Propostas iniciais:
+
+Política formal de senhas e acessos.
+
+Criptografia de conexões e credenciais.
+
+Padronização de máquinas e ambientes.
+
+Capacitação contínua das equipes.
+
+Implementação futura de um Comitê Interno de Segurança.
+
+Cola:
+Fale diretamente com a direção: a MITIS está crescendo, e cada novo cliente aumenta o volume de dados e a responsabilidade.
+O momento ideal para estruturar segurança é agora, enquanto ainda é simples de aplicar.
+Explique que segurança é cultura, não projeto — precisa ser incorporada à rotina.
+
+Slide 10 — Conclusão
+
+Texto no slide:
+
+A cibersegurança não é um obstáculo ao crescimento.
+É o que garante que o crescimento continue existindo.
+
+Segurança é responsabilidade de todos.
+
+Cola:
+Encerre agradecendo o tempo de todos e enfatize que a segurança é um compromisso coletivo.
+Diga que as propostas apresentadas são viáveis, escaláveis e necessárias para garantir a continuidade da MITIS como empresa sólida, confiável e preparada para o futuro.
+Deixe espaço para perguntas ou para marcar uma futura discussão prática entre os setores.
